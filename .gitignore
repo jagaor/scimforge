@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Distribución / empaquetado
+dist/
+build/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Cachés de herramientas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Cobertura
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Bases de datos SQLite generadas en local
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Informes de conformidad locales
+report*.json
+conformance-report*.json
+
+# Editores y sistema operativo
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

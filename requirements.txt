@@ -1,0 +1,31 @@
+# ScimForge — dependencias pinneadas para reproducibilidad
+# Autor: Javier Garrido Ortiz
+#
+# Servidor SCIM 2.0 de referencia + suite de conformidad.
+# Todas las versiones están fijadas para garantizar builds deterministas.
+
+# --- Framework web y servidor ASGI ---
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+
+# --- Validación de modelos (SCIM RFC 7643) ---
+pydantic==2.10.3
+
+# --- Persistencia asíncrona (SQLite) ---
+aiosqlite==0.20.0
+
+# --- Cliente HTTP asíncrono para la suite de conformidad ---
+httpx==0.28.1
+
+# --- Runtime asíncrono (backend de anyio para httpx y starlette) ---
+anyio==4.7.0
+
+# --- CLI y renderizado de informes ---
+typer==0.15.1
+rich==13.9.4
+
+# --- Testing ---
+pytest==8.3.4
+# El plugin de pytest para anyio se distribuye dentro del propio paquete anyio
+# (marcador @pytest.mark.anyio). No se instala pytest-anyio por separado.
